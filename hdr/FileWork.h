@@ -1,7 +1,7 @@
 #ifndef filework
 #define filework
 
-#include "strfunc.h"
+#include "StrFunc.h"
 
 
 char * OpenAndReadFile(const char* myfile, int * ReadSize);
