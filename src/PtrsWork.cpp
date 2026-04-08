@@ -67,14 +67,14 @@ ptrs* CreatePtrArr(int linescnt, char* buff)
     int i = 0;
     char* new_buff = NULL;
     ptrsarr[i].val = buff;
-    ptrsarr[i].len = mystrchr(buff, '\n') + 1 - ptrsarr[i].val;
+    ptrsarr[i].len = (int)(mystrchr(buff, '\n') + 1 - ptrsarr[i].val);
     while (i < linescnt) {
         new_buff = mystrchr(buff, '\n');
         if (new_buff) {
             if (AlphasCheck(new_buff + 1)) {
                 i++;
                 buff = ptrsarr[i].val = new_buff + 1;
-                ptrsarr[i].len = mystrchr(buff, '\n') + 1 - ptrsarr[i].val;
+                ptrsarr[i].len = (int)(mystrchr(buff, '\n') + 1 - ptrsarr[i].val);
                 //PRD(ptrsarr[i].len);
             }
             else

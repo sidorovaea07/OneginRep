@@ -3,10 +3,10 @@ DIR=../src/
 OBJ=../obj/
 OBJs=${OBJ}StrFunc.o ${OBJ}main.o ${OBJ}FileWork.o ${OBJ}PtrsWork.o ${OBJ}BubbleSorts.o
 aaa:
-	g++ ${DIR}StrFunc.cpp ${FLAGS} -c -o ${OBJ}StrFunc.o
-	g++ ${DIR}main.cpp  ${FLAGS} -c -o ${OBJ}main.o
-	g++ ${DIR}FileWork.cpp ${FLAGS} -c -o ${OBJ}FileWork.o
-	g++ ${DIR}PtrsWork.cpp ${FLAGS} -c -o ${OBJ}PtrsWork.o
-	g++ ${DIR}BubbleSorts.cpp ${FLAGS} -c -o ${OBJ}BubbleSorts.o
-	g++ ${OBJs} ${FLAGS} -o onegin
+	@g++ ${DIR}StrFunc.cpp ${FLAGS} -c -o ${OBJ}StrFunc.o
+	@g++ ${DIR}main.cpp  ${FLAGS} -c -o ${OBJ}main.o
+	@g++ ${DIR}FileWork.cpp ${FLAGS} -c -o ${OBJ}FileWork.o
+	@g++ ${DIR}PtrsWork.cpp ${FLAGS} -c -o ${OBJ}PtrsWork.o
+	@g++ ${DIR}BubbleSorts.cpp ${FLAGS} -c -o ${OBJ}BubbleSorts.o
+	@g++ ${OBJs} ${FLAGS} -o onegin
 	./onegin

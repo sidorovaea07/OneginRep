@@ -1,13 +1,10 @@
 #ifndef strfunc
 #define strfunc
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <limits.h>
 #include <math.h>
 
-//#define MAXSIZE 100
 #define FCOLOR "\033[35m"
 #define WCOLOR "\033[0m"
 #define GCOLOR "\033[90m"
@@ -23,6 +20,7 @@ struct ptrs {
     char *val;
     int len;
 };
+
 struct Data {
     const char * input;
     struct ptrs* prim;
@@ -32,6 +30,7 @@ struct Data {
     char *buff;
     int size;
 };
+
 int MyLen(char* s1, char* s2);
 int AlphasCheck (char * s);
 int mystrcmp(char * s1, char * s2);
